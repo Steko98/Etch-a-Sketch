@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form>
-      <label for="quantity">Number of squares per side:</label>
-      <input type="number" id="quantity" name="quantity" min="1" max="100" required>
-      <button type="submit" id="submit-button">Generate</button>
-    </form>
+    <div class="form-box">
+        <form>
+        <label for="quantity">Number of squares per side:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+        <button type="submit" id="submit-button">Generate</button>
+        </form>        
+    </div>
     <div id="container"></div>
     <script src="./app.js"></script>    
 </body>

@@ -17,13 +17,22 @@ body {
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 720px;
-    height: 720px;
+    width: 400px;
+    height: 400px;
+}
+
+.form-box{
+    height: fit-content;
 }
 
 #box{
     background-color: #EEE0CC;
-    border: 1px solid #BA6A4C;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+#box:hover{
+    border-radius: 50%;
 }
 
 form {

@@ -2,7 +2,7 @@ let numberOfDivs = 16;
 const container = document.getElementById("container");
 const submitButton = document.getElementById("submit-button");
 
-function randomRgba() {
+function randomRgb() {
   return (
     "rgba(" +
     Math.round(Math.random() * 255) +
@@ -10,14 +10,12 @@ function randomRgba() {
     Math.round(Math.random() * 255) +
     "," +
     Math.round(Math.random() * 255) +
-    "," +
-    Math.random().toFixed(1) +
     ")"
   );
 }
 
 function colorOnHover(item) {
-  item.style.backgroundColor = randomRgba();
+  item.style.backgroundColor = randomRgb();
 }
 
 function clearGrid() {
@@ -31,8 +29,8 @@ function createGrid(num) {
     let box = document.createElement("div");
     box.setAttribute("id", "box");
 
-    box.style.width = `${720 / num}px`;
-    box.style.height = `${720 / num}px`;
+    box.style.width = `${400 / num}px`;
+    box.style.height = `${400 / num}px`;
     box.addEventListener("mouseover", () => {
       colorOnHover(box);
     });
